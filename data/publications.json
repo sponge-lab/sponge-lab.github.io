@@ -18,7 +18,7 @@
     "title": "Uni-Render: A Unified Accelerator for Real-Time Rendering Across Diverse Neural Renderers",
     "authors": "Chaojian Li, Sixu Li, Linrui Jiang, Jingqun Zhang, Yingyan (Celine) Lin",
     "venue": "Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture (HPCA 2025)",
-    "link": "https://1drv.ms/b/c/0b784ff0035e9cd3/ERt0OxbW_ZJNrTqfQxXuFSABuFhf3p2EbjVveQoT203ayA?e=MO88Ay"
+    "link": "https://arxiv.org/abs/2503.23644"
   },
   {
     "year": "2024",
@@ -40,7 +40,7 @@
     "title": "3D Gaussian Rendering Can Be Sparser: Efficient Rendering via Learned Fragment Pruning",
     "authors": "Zhifan Ye, Chenxi Wan, Chaojian Li, Jihonn Hong, Sixu Li, Leshu Li, Yongan Zhang, Yingyan (Celine) Lin",
     "venue": "Advances in Neural Information Processing Systems (NeurIPS 2024)",
-    "link": null
+    "link": "https://openreview.net/forum?id=IVqzbuLfoL"
   },
   {
     "year": "2023",
