@@ -4,6 +4,10 @@ html, body {
   height: 100%;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -393,6 +397,7 @@ footer {
   text-align: center;
   margin: 2rem 0;
   box-shadow: 0 4px 15px rgba(250, 166, 26, 0.3);
+  line-height: 1.5;
 }
 
 .research-areas-grid {
