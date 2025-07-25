@@ -107,10 +107,29 @@ function formatPublication(publication) {
   const titleElement = publication.link 
     ? `<a href="${publication.link}" class="publication-title-link" target="_blank">${publication.title}</a>`
     : `<span class="publication-title">${publication.title}</span>`;
+  
+  let noteElement = '';
+  if (publication.note) {
+    // Determine CSS class based on note content
+    let noteClass = 'publication-note';
+    const noteLower = publication.note.toLowerCase();
+    
+    if (noteLower.includes('award')) {
+      noteClass += ' award';
+    } else if (noteLower.includes('spotlight')) {
+      noteClass += ' spotlight';
+    } else if (noteLower.includes('oral')) {
+      noteClass += ' oral';
+    }
+    // Default green styling if no specific class matches
+    
+    noteElement = `<div class="${noteClass}">${publication.note}</div>`;
+  }
     
   return `
     <li>
       <div class="publication-title">${titleElement}</div>
+      ${noteElement}
       <div class="publication-authors">${publication.authors}</div>
       <div class="publication-venue">${publication.venue}</div>
     </li>

@@ -18,14 +18,15 @@
     "title": "Uni-Render: A Unified Accelerator for Real-Time Rendering Across Diverse Neural Renderers",
     "authors": "Chaojian Li, Sixu Li, Linrui Jiang, Jingqun Zhang, Yingyan (Celine) Lin",
     "venue": "Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture (HPCA 2025)",
-    "link": "https://arxiv.org/abs/2503.23644"
+    "link": "https://1drv.ms/b/c/0b784ff0035e9cd3/ERt0OxbW_ZJNrTqfQxXuFSABuFhf3p2EbjVveQoT203ayA?e=MO88Ay"
   },
   {
     "year": "2024",
     "title": "Fusion-3D: Integrated Acceleration for Instant 3D Reconstruction and Real-Time Rendering",
     "authors": "Sixu Li, Yang (Katie) Zhao, Chaojian Li, Bowei Guo, Jingqun Zhang, Wenbo Zhu, Zhifan Ye, Cheng Wan, Yingyan (Celine) Lin",
     "venue": "Proceedings of the 57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024) - Best Paper Award",
-    "link": "https://ieeexplore.ieee.org/document/10764505"
+    "link": "https://ieeexplore.ieee.org/document/10764505",
+    "note": "Best Paper Award"
   },
   {
     "year": "2024",
@@ -39,7 +40,7 @@
     "title": "3D Gaussian Rendering Can Be Sparser: Efficient Rendering via Learned Fragment Pruning",
     "authors": "Zhifan Ye, Chenxi Wan, Chaojian Li, Jihonn Hong, Sixu Li, Leshu Li, Yongan Zhang, Yingyan (Celine) Lin",
     "venue": "Advances in Neural Information Processing Systems (NeurIPS 2024)",
-    "link": "https://openreview.net/forum?id=IVqzbuLfoL"
+    "link": null
   },
   {
     "year": "2023",
@@ -74,6 +75,7 @@
     "title": "HW-NAS-Bench: Hardware-aware neural architecture search benchmark",
     "authors": "Chaojian Li, Zhongzhi Yu, Yonggan Fu, Yongan Zhang, Yang (Katie) Zhao, Haoran You, Qixuan Yu, Yue Wang, Yingyan (Celine) Lin",
     "venue": "International Conference on Learning Representations (ICLR 2021)",
-    "link": "https://openreview.net/forum?id=_0kaDkv3dVf"
+    "link": "https://openreview.net/forum?id=_0kaDkv3dVf",
+    "note": "Spotlight"
   }
 ]
