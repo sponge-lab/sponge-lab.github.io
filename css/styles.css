@@ -1,0 +1,537 @@
+/* Sponge Computing Lab - Main Stylesheet */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdfdfd;
+  color: #003366;
+  padding-top: 100px; /* Add padding to account for fixed header */
+  padding-bottom: 80px; /* Space for fixed footer */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  box-shadow: 0 4px 20px rgba(0, 51, 102, 0.3);
+  z-index: 1000;
+  border-bottom: 3px solid #faa61a;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Add some visual enhancement to the overall header */
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #faa61a, #ffb84d, #faa61a, transparent);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* Add subtle animation to logo */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+
+.left-section img {
+  height: 70px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  animation: float 4s ease-in-out infinite;
+}
+
+.left-section img:hover {
+  transform: scale(1.05);
+  animation-play-state: paused;
+}
+
+.lab-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #faa61a;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
+}
+
+.lab-name:hover {
+  color: #ffb84d;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav#navbar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+nav#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav#navbar a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #faa61a, #ffb84d);
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+nav#navbar a:hover {
+  color: #003366;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(250, 166, 26, 0.4);
+  border-color: #faa61a;
+}
+
+nav#navbar a:hover::before {
+  opacity: 1;
+}
+
+nav#navbar a.active {
+  background: linear-gradient(45deg, #faa61a, #ffb84d);
+  color: #003366;
+  box-shadow: 0 4px 15px rgba(250, 166, 26, 0.3);
+}
+
+nav#navbar a.active::before {
+  opacity: 1;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu-toggle:hover {
+  background: rgba(250, 166, 26, 0.2);
+  border-color: #faa61a;
+}
+
+.menu-toggle div {
+  width: 28px;
+  height: 3px;
+  background: linear-gradient(90deg, white, #faa61a);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-toggle:hover div {
+  background: linear-gradient(90deg, #faa61a, #ffb84d);
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  margin-top: 0; /* Remove top margin since body now has padding-top */
+}
+
+/* Welcome/Home page specific styles */
+.welcome-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 0; /* Remove top margin since body has padding-top */
+}
+
+.welcome-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.welcome-image {
+  flex: 0 0 300px;
+  max-width: 100%;
+}
+
+/* Footer styles */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Link styles */
+.link {
+  color: #996600;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Content page styles */
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  color: #003366;
+  border-bottom: 2px solid #faa61a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-section h3 {
+  color: #003366;
+  margin-top: 1.5rem;
+}
+
+/* Team member cards */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.team-member {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #faa61a;
+}
+
+.team-member h4 {
+  color: #003366;
+  margin-top: 0;
+}
+
+/* Publication list */
+.publication-list {
+  list-style: none;
+  padding: 0;
+}
+
+.publication-list li {
+  background: #f8f9fa;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #faa61a;
+}
+
+.publication-title {
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.publication-authors {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.publication-venue {
+  font-style: italic;
+  color: #996600;
+}
+
+/* Join page specific styles */
+.position-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  border-left: 4px solid #faa61a;
+}
+
+.position-card h3 {
+  color: #003366;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.position-card ul {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.position-card li {
+  margin: 0.5rem 0;
+}
+
+.research-areas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.research-area {
+  background: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #003366;
+}
+
+.research-area h4 {
+  color: #003366;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.application-process {
+  margin: 2rem 0;
+}
+
+.application-step {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border-left: 4px solid #996600;
+}
+
+.application-step h4 {
+  color: #003366;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  font-size: 1.2rem;
+  text-align: center;
+  background: #003366;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.contact-email a {
+  color: #faa61a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.benefit-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-top: 4px solid #faa61a;
+  text-align: center;
+}
+
+.benefit-item h4 {
+  color: #003366;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.faq-item h4 {
+  color: #003366;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+}
+
+.contact-info {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #003366;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  /* Mobile adjustments for fixed header */
+  body {
+    padding-top: 90px; /* Slightly less padding on mobile */
+  }
+  
+  nav#navbar {
+    display: none;
+    flex-direction: column;
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    position: fixed; /* Change to fixed positioning */
+    right: 1rem;
+    top: 90px; /* Position below the fixed header */
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 51, 102, 0.4);
+    border: 2px solid #faa61a;
+    backdrop-filter: blur(20px);
+    min-width: 220px;
+    z-index: 999; /* Just below header */
+  }
+
+  nav#navbar.show {
+    display: flex;
+    animation: slideDown 0.3s ease;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  nav#navbar a {
+    margin: 0.5rem 0;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Ensure all mobile nav links have consistent styling */
+  nav#navbar a,
+  nav#navbar a.active {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+
+  nav#navbar a:hover,
+  nav#navbar a.active {
+    background: linear-gradient(45deg, #faa61a, #ffb84d);
+    color: #003366;
+    border-color: #faa61a;
+    transform: none; /* Remove the translateY on mobile */
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .welcome-container {
+    flex-direction: column;
+  }
+
+  .welcome-image {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .welcome-container {
+    padding: 1.5rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .position-card, .application-step, .contact-info {
+    padding: 1.5rem;
+  }
+}
