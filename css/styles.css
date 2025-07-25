@@ -1,12 +1,18 @@
 /* Sponge Computing Lab - Main Stylesheet */
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #fdfdfd;
   color: #003366;
   padding-top: 100px; /* Add padding to account for fixed header */
-  padding-bottom: 80px; /* Space for fixed footer */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -174,13 +180,14 @@ nav#navbar a.active::before {
   background: linear-gradient(90deg, #faa61a, #ffb84d);
 }
 
-/* Main content styles */
+/* Main content styles - Updated for flexbox layout */
 main {
   padding: 2rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 1000px;
-  margin-top: 0; /* Remove top margin since body now has padding-top */
+  margin-top: 0;
+  flex: 1; /* This makes main content grow to fill available space */
 }
 
 /* Welcome/Home page specific styles */
@@ -192,7 +199,8 @@ main {
   gap: 2rem;
   padding: 2.5rem;
   flex-wrap: wrap;
-  margin-top: 0; /* Remove top margin since body has padding-top */
+  margin-top: 0;
+  flex: 1; /* Allow welcome container to grow */
 }
 
 .welcome-text {
@@ -205,16 +213,15 @@ main {
   max-width: 100%;
 }
 
-/* Footer styles */
+/* Footer styles - Updated to stick to bottom */
 footer {
   background-color: #003366;
   color: white;
   text-align: center;
   padding: 1rem;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   box-sizing: border-box;
+  margin-top: auto; /* Push footer to bottom */
 }
 
 /* Link styles */
@@ -736,7 +743,7 @@ footer {
 /* Principal Investigator Section */
 .pi-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0 2rem;
   margin: 2rem 0;
   position: relative;
 }
