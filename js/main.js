@@ -36,6 +36,72 @@ function highlightCurrentPage() {
   });
 }
 
+// Function to format a single news item
+function formatNewsItem(newsItem) {
+  return `
+    <div class="news-item">
+      <div class="news-date">${newsItem.date}</div>
+      <div class="news-title">${newsItem.title}</div>
+      <div class="news-content">${newsItem.content}</div>
+      <a href="${newsItem.link}" class="news-link">${newsItem.linkText} →</a>
+    </div>
+  `;
+}
+
+// Function to load and display news from JSON
+async function loadNews(maxItems = 4) {
+  const newsGrid = document.getElementById('news-grid');
+  const newsGridFull = document.getElementById('news-grid-full');
+  const targetGrid = newsGrid || newsGridFull;
+  
+  if (!targetGrid) return;
+
+  try {
+    // Show loading state
+    targetGrid.innerHTML = `
+      <div class="news-item">
+        <div class="news-title">Loading news...</div>
+        <div class="news-content">Please wait while we load the latest updates.</div>
+      </div>
+    `;
+
+    // Load news data from JSON file
+    const response = await fetch('data/news.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const newsData = await response.json();
+    
+    if (newsData && Array.isArray(newsData)) {
+      // Take only the specified number of most recent items
+      const itemsToShow = maxItems === 999 ? newsData : newsData.slice(0, maxItems);
+      targetGrid.innerHTML = itemsToShow.map(formatNewsItem).join('');
+    } else {
+      throw new Error('Invalid news data format');
+    }
+    
+  } catch (error) {
+    console.error('Error loading news:', error);
+    
+    // Fallback: show sample news or error message
+    targetGrid.innerHTML = `
+      <div class="news-item">
+        <div class="news-date">July 2025</div>
+        <div class="news-title">Welcome to Our Lab!</div>
+        <div class="news-content">Stay tuned for the latest updates from the Sponge Computing Lab. We'll be sharing news about our research, publications, and opportunities soon!</div>
+        <a href="research.html" class="news-link">Learn More →</a>
+      </div>
+      <div class="news-item">
+        <div class="news-date">July 2025</div>
+        <div class="news-title">We're Hiring!</div>
+        <div class="news-content">We are looking for passionate PhD and MPhil students to join our research team. Check out our open positions and application process.</div>
+        <a href="join.html" class="news-link">Join Us →</a>
+      </div>
+    `;
+  }
+}
+
 // Initialize page when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Load header and footer includes if they exist
@@ -54,6 +120,18 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     // If no includes, highlight current page immediately
     highlightCurrentPage();
+  }
+
+  // Load news immediately when DOM is ready
+  const newsGrid = document.getElementById('news-grid');
+  const newsGridFull = document.getElementById('news-grid-full');
+  
+  if (newsGrid) {
+    // Homepage: Show 4 most recent news items
+    loadNews(3);
+  } else if (newsGridFull) {
+    // News page: Show all news items
+    loadNews(9999);
   }
 
   // Close mobile menu when clicking outside

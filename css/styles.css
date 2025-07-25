@@ -535,3 +535,518 @@ footer {
     padding: 1.5rem;
   }
 }
+
+/* Recent News Section Styles */
+.news-section {
+  background: #f8f9fa;
+  padding: 3rem 0;
+  margin-top: 2rem;
+}
+
+.news-section .content-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.news-section h2 {
+  color: #003366;
+  border-bottom: 2px solid #faa61a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.news-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #faa61a;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.news-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 51, 102, 0.15);
+  border-left-color: #003366;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #996600;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.news-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.news-content {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.news-link {
+  color: #faa61a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.news-link:hover {
+  color: #003366;
+  text-decoration: none;
+  transform: translateX(3px);
+}
+
+.news-archive {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.news-archive a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: 2px solid #003366;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.news-archive a:hover {
+  background: #003366;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 51, 102, 0.2);
+}
+
+/* Mobile responsive adjustments for news section */
+@media (max-width: 768px) {
+  .news-section {
+    padding: 2rem 0;
+    margin-top: 1rem;
+  }
+  
+  .news-section .content-section {
+    padding: 0 1rem;
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .news-item {
+    padding: 1.25rem;
+  }
+  
+  .news-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Team Page Styles - Redesigned */
+
+/* Principal Investigator Section */
+.pi-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.pi-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(0, 51, 102, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(250, 166, 26, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.pi-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.pi-photo {
+  flex: 0 0 280px;
+  position: relative;
+}
+
+.pi-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 51, 102, 0.15);
+  border: 4px solid white;
+  display: block;
+}
+
+.pi-photo-placeholder {
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #dee2e6;
+  box-shadow: 0 4px 15px rgba(0, 51, 102, 0.1);
+}
+
+.photo-icon {
+  font-size: 4rem;
+  color: #adb5bd;
+  margin-bottom: 1rem;
+}
+
+.pi-photo-placeholder p {
+  color: #6c757d;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Hide placeholder when image loads successfully */
+.pi-image:not([src*="placeholder"]) + .pi-photo-placeholder {
+  display: none;
+}
+
+/* Show placeholder when image fails to load */
+.pi-image[src*="placeholder"], 
+.pi-image:not([src]),
+img[src="images/pi-photo.jpg"] {
+  display: none;
+}
+
+.pi-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.pi-info h3 {
+  font-size: 2.2rem;
+  color: #003366;
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.pi-title {
+  font-size: 1.3rem;
+  color: #faa61a;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.pi-affiliation {
+  color: #666;
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+  line-height: 1.5;
+}
+
+.pi-research, .pi-background, .pi-contact {
+  margin-bottom: 2rem;
+}
+
+.pi-info h4 {
+  color: #003366;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+  border-bottom: 2px solid #faa61a;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.pi-research ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pi-research li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+  line-height: 1.5;
+}
+
+.pi-research li::before {
+  content: '🔬';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+.pi-background p, .pi-contact p {
+  color: #555;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.pi-contact p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Team Members Grid - New Design */
+.team-grid-new {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.team-member-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 51, 102, 0.08);
+  border-left: 4px solid #faa61a;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #faa61a, #ffb84d, #faa61a);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 51, 102, 0.15);
+  border-left-color: #003366;
+}
+
+.team-member-card:hover::before {
+  opacity: 1;
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+}
+
+.member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #faa61a;
+  display: block;
+}
+
+.member-photo-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e9ecef 0%, #f8f9fa 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed #dee2e6;
+}
+
+.member-photo .photo-icon {
+  font-size: 2.5rem;
+  color: #adb5bd;
+  margin: 0;
+}
+
+.member-info {
+  text-align: center;
+}
+
+.member-info h4 {
+  color: #003366;
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.member-role {
+  color: #faa61a;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+
+.member-description {
+  color: #555;
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.member-link {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #003366;
+  border-radius: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.member-link:hover {
+  background: #003366;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Recruitment Card Special Styling */
+.recruitment-card {
+  border-left-color: #28a745;
+  background: linear-gradient(135deg, #f8fff9 0%, #ffffff 100%);
+}
+
+.recruitment-card:hover {
+  border-left-color: #28a745;
+}
+
+.recruitment-card .member-photo {
+  background: linear-gradient(135deg, #28a745 0%, #34ce57 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recruitment-icon {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.recruitment-card .member-role {
+  color: #28a745;
+}
+
+.recruitment-card .member-link {
+  border-color: #28a745;
+  color: #28a745;
+}
+
+.recruitment-card .member-link:hover {
+  background: #28a745;
+  color: white;
+}
+
+/* Alumni Section */
+.alumni-list {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid #faa61a;
+}
+
+.alumni-list p {
+  color: #666;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .pi-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .pi-photo {
+    flex: none;
+    align-self: center;
+    max-width: 250px;
+  }
+  
+  .pi-image, .pi-photo-placeholder {
+    height: 300px;
+  }
+  
+  .pi-info h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .pi-title, .pi-affiliation {
+    text-align: center;
+  }
+  
+  .team-grid-new {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .pi-section {
+    padding: 2rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member-card {
+    padding: 1.5rem;
+  }
+  
+  .pi-info h3 {
+    font-size: 1.6rem;
+  }
+  
+  .member-photo {
+    width: 100px;
+    height: 100px;
+  }
+}

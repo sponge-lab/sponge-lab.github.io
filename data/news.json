@@ -1,0 +1,23 @@
+[
+  {
+    "date": "August 2025",
+    "title": "New PhD/Intern Positions Available",
+    "content": "We are looking for highly motivated PhD students (Spring/Fall 2026) and interns with strong backgrounds in computer architecture and systems, parallel programming, and deep learning to join us.",
+    "link": "join.html",
+    "linkText": "Learn More"
+  },
+  {
+    "date": "August 2025",
+    "title": "Lab Officially Launched",
+    "content": "The Sponge Computing Lab has officially launched at HKUST CSE! We're excited to embark on our research journey in efficient, adaptable, and scalable AI systems.",
+    "link": "research.html",
+    "linkText": "Our Research"
+  },
+  {
+    "date": "July 2025",
+    "title": "Paper Accepted at MICRO 2025",
+    "content": "Our paper, \"ORCHES: Orchestrated Test-Time-Computation-Based LLM Reasoning on Collaborative GPU-PIM Heterogeneous Systems,\" has been accepted at MICRO 2025.",
+    "link": "publications.html",
+    "linkText": "View Publications"
+  }
+]
