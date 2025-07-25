@@ -1,0 +1,79 @@
+[
+  {
+    "year": "2025",
+    "title": "ORCHES: Orchestrated Test-Time-Computation-based LLM Reasoning on Collaborative GPU-PIM Heterogeneous System",
+    "authors": "Sixu Li, Yuzhou Chen, Chaojian Li, Yonggan Fu, Zheng Wang, Zhongzhi Yu, Haoran You, Zhifan Ye, Wei Zhou, Yongan Zhang, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 58th IEEE/ACM International Symposium on Microarchitecture (MICRO 2025)",
+    "link": null
+  },
+  {
+    "year": "2025",
+    "title": "Scaling Laws of Graph Neural Networks for Atomistic Materials Modeling",
+    "authors": "Chaojian Li, Zhifan Ye, Massimiliano Lupo Pasini, Jong Youl Choi, Cheng Wan, Yingyan (Celine) Lin, Prasanna Balaprakash",
+    "venue": "Proceedings of the 62nd ACM/IEEE Design Automation Conference (DAC 2025)",
+    "link": "https://arxiv.org/abs/2504.08112"
+  },
+  {
+    "year": "2025",
+    "title": "Uni-Render: A Unified Accelerator for Real-Time Rendering Across Diverse Neural Renderers",
+    "authors": "Chaojian Li, Sixu Li, Linrui Jiang, Jingqun Zhang, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture (HPCA 2025)",
+    "link": "https://arxiv.org/abs/2503.23644"
+  },
+  {
+    "year": "2024",
+    "title": "Fusion-3D: Integrated Acceleration for Instant 3D Reconstruction and Real-Time Rendering",
+    "authors": "Sixu Li, Yang (Katie) Zhao, Chaojian Li, Bowei Guo, Jingqun Zhang, Wenbo Zhu, Zhifan Ye, Cheng Wan, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024) - Best Paper Award",
+    "link": "https://ieeexplore.ieee.org/document/10764505"
+  },
+  {
+    "year": "2024",
+    "title": "MixRT: Mixed Neural Representations For Real-Time NeRF Rendering",
+    "authors": "Chaojian Li, Bichen Wu, Peter Vajda, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 12th International Conference on 3D Vision (3DV 2024)",
+    "link": "https://licj15.github.io/MixRT/"
+  },
+  {
+    "year": "2024",
+    "title": "3D Gaussian Rendering Can Be Sparser: Efficient Rendering via Learned Fragment Pruning",
+    "authors": "Zhifan Ye, Chenxi Wan, Chaojian Li, Jihonn Hong, Sixu Li, Leshu Li, Yongan Zhang, Yingyan (Celine) Lin",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS 2024)",
+    "link": "https://openreview.net/forum?id=IVqzbuLfoL"
+  },
+  {
+    "year": "2023",
+    "title": "Instant-3D: Instant Neural Radiance Field Training Towards On-Device AR/VR 3D Reconstruction",
+    "authors": "Sixu Li*, Chaojian Li*, Wenbo Zhu, Boyang (Tony) Yu, Yang (Katie) Zhao, Cheng Wan, Haoran You, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 50th Annual International Symposium on Computer Architecture (ISCA 2023)",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3579371.3589115"
+  },
+  {
+    "year": "2023",
+    "title": "An Investigation on Hardware-Aware Vision Transformer Scaling",
+    "authors": "Chaojian Li, Kyungmin Kim, Bichen Wu, Peizhao Zhang, Hang Zhang, Xiaoliang Dai, Peter Vajda, Yingyan (Celine) Lin",
+    "venue": "ACM Transactions on Embedded Computing Systems (TECS 2023)",
+    "link": "https://dl.acm.org/doi/10.1145/3611387"
+  },
+  {
+    "year": "2022",
+    "title": "RT-NeRF: Real-Time On-Device Neural Radiance Fields Towards Immersive AR/VR Rendering",
+    "authors": "Chaojian Li*, Sixu Li*, Yang (Katie) Zhao, Wenbo Zhu, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the IEEE/ACM International Conference on Computer-Aided Design (ICCAD 2022)",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3508352.3549380"
+  },
+  {
+    "year": "2022",
+    "title": "DANCE: DAta-Network Co-optimization for Efficient Segmentation Model Training and Inference",
+    "authors": "Chaojian Li, Wuyang Chen, Yuchen Gu, Tianlong Chen, Yonggan Fu, Zhangyang (Atlas) Wang, Yingyan (Celine) Lin",
+    "venue": "ACM Transactions on Design Automation of Electronic Systems (TODAES 2022)",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3510835"
+  },
+  {
+    "year": "2021",
+    "title": "HW-NAS-Bench: Hardware-aware neural architecture search benchmark",
+    "authors": "Chaojian Li, Zhongzhi Yu, Yonggan Fu, Yongan Zhang, Yang (Katie) Zhao, Haoran You, Qixuan Yu, Yue Wang, Yingyan (Celine) Lin",
+    "venue": "International Conference on Learning Representations (ICLR 2021)",
+    "link": "https://openreview.net/forum?id=_0kaDkv3dVf"
+  }
+]

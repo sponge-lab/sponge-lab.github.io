@@ -278,6 +278,19 @@ footer {
   border-left: 4px solid #faa61a;
 }
 
+.publication-title-link {
+  font-weight: bold;
+  color: #003366;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.publication-title-link:hover {
+  color: #faa61a;
+  border-bottom-color: #faa61a;
+}
+
 .publication-title {
   font-weight: bold;
   color: #003366;

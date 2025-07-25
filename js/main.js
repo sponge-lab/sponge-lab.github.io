@@ -102,6 +102,106 @@ async function loadNews(maxItems = 4) {
   }
 }
 
+// Utility function to format publication data
+function formatPublication(publication) {
+  const titleElement = publication.link 
+    ? `<a href="${publication.link}" class="publication-title-link" target="_blank">${publication.title}</a>`
+    : `<span class="publication-title">${publication.title}</span>`;
+    
+  return `
+    <li>
+      <div class="publication-title">${titleElement}</div>
+      <div class="publication-authors">${publication.authors}</div>
+      <div class="publication-venue">${publication.venue}</div>
+    </li>
+  `;
+}
+
+// Function to group publications by year
+function groupPublicationsByYear(publications) {
+  const grouped = {};
+  publications.forEach(pub => {
+    if (!grouped[pub.year]) {
+      grouped[pub.year] = [];
+    }
+    grouped[pub.year].push(pub);
+  });
+  return grouped;
+}
+
+// Function to load and display publications dynamically
+async function loadPublications() {
+  const publicationContainer = document.getElementById('publications-container');
+  
+  if (!publicationContainer) return;
+
+  try {
+    // Show loading state
+    publicationContainer.innerHTML = `
+      <div class="content-section">
+        <h3>Loading publications...</h3>
+        <p>Please wait while we load the latest publications.</p>
+      </div>
+    `;
+
+    // Load publications data from JSON file
+    const response = await fetch('data/publications.json');
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const publicationsData = await response.json();
+    
+    if (publicationsData && Array.isArray(publicationsData)) {
+      // Group publications by year
+      const groupedPubs = groupPublicationsByYear(publicationsData);
+      
+      // Sort years in descending order (most recent first)
+      const sortedYears = Object.keys(groupedPubs).sort((a, b) => {
+        // Handle special cases like "Patent"
+        if (a === "Patent") return 1;
+        if (b === "Patent") return 1;
+        return parseInt(b) - parseInt(a);
+      });
+      
+      // Generate HTML for each year group
+      let html = '';
+      sortedYears.forEach(year => {
+        const yearLabel = year === "Patent" ? "Patents & Preprints" : year;
+        html += `
+          <div class="content-section">
+            <h3>${yearLabel}</h3>
+            <ul class="publication-list">
+              ${groupedPubs[year].map(formatPublication).join('')}
+            </ul>
+          </div>
+        `;
+      });
+      
+      publicationContainer.innerHTML = html;
+    } else {
+      throw new Error('Invalid publications data format');
+    }
+    
+  } catch (error) {
+    console.error('Error loading publications:', error);
+    
+    // Fallback: show sample publications
+    publicationContainer.innerHTML = `
+      <div class="content-section">
+        <h3>2025</h3>
+        <ul class="publication-list">
+          <li>
+            <div class="publication-title">Publications will be loaded automatically</div>
+            <div class="publication-authors">Please check back soon for updates</div>
+            <div class="publication-venue">Sponge Computing Lab @ HKUST</div>
+          </li>
+        </ul>
+      </div>
+    `;
+  }
+}
+
 // Initialize page when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
   // Load header and footer includes if they exist
@@ -120,6 +220,12 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     // If no includes, highlight current page immediately
     highlightCurrentPage();
+  }
+
+  // Load publications immediately when DOM is ready (for publications page)
+  const publicationsContainer = document.getElementById('publications-container');
+  if (publicationsContainer) {
+    loadPublications();
   }
 
   // Load news immediately when DOM is ready
@@ -160,23 +266,3 @@ document.addEventListener('click', function(e) {
     }
   }
 });
-
-// Utility function to format publication data
-function formatPublication(publication) {
-  return `
-    <li>
-      <div class="publication-title">${publication.title}</div>
-      <div class="publication-authors">${publication.authors}</div>
-      <div class="publication-venue">${publication.venue}</div>
-      ${publication.link ? `<a href="${publication.link}" class="link" target="_blank">View Paper</a>` : ''}
-    </li>
-  `;
-}
-
-// Function to load and display publications dynamically
-function loadPublications(publications) {
-  const publicationList = document.getElementById('publication-list');
-  if (publicationList && publications) {
-    publicationList.innerHTML = publications.map(formatPublication).join('');
-  }
-}
