@@ -18,13 +18,20 @@
     "title": "Uni-Render: A Unified Accelerator for Real-Time Rendering Across Diverse Neural Renderers",
     "authors": "Chaojian Li, Sixu Li, Linrui Jiang, Jingqun Zhang, Yingyan (Celine) Lin",
     "venue": "Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture (HPCA 2025)",
-    "link": "https://arxiv.org/abs/2503.23644"
+    "link": "https://www.computer.org/csdl/proceedings-article/hpca/2025/064700a246/25KnXkNIUQo"
+  },
+  {
+    "year": "2025",
+    "title": "Gaussian Blending Unit: An Edge GPU Plug-in for Real-Time Gaussian-Based Rendering in AR/VR",
+    "authors": "Zhifan Ye, Yonggan Fu, Jingqun Zhang, Leshu Li, Yongan Zhang, Sixu Li, Cheng Wan, Chenxi Wan, Chaojian Li, Sreemanth Prathipati, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture (HPCA 2025)",
+    "link": "https://www.computer.org/csdl/proceedings-article/hpca/2025/064700a353/25Ko3sZI3u0"
   },
   {
     "year": "2024",
     "title": "Fusion-3D: Integrated Acceleration for Instant 3D Reconstruction and Real-Time Rendering",
     "authors": "Sixu Li, Yang (Katie) Zhao, Chaojian Li, Bowei Guo, Jingqun Zhang, Wenbo Zhu, Zhifan Ye, Cheng Wan, Yingyan (Celine) Lin",
-    "venue": "Proceedings of the 57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024) - Best Paper Award",
+    "venue": "Proceedings of the 57th IEEE/ACM International Symposium on Microarchitecture (MICRO 2024)",
     "link": "https://ieeexplore.ieee.org/document/10764505",
     "note": "Best Paper Award"
   },
@@ -43,25 +50,97 @@
     "link": "https://openreview.net/forum?id=IVqzbuLfoL"
   },
   {
+    "year": "2024",
+    "title": "An Investigation on Hardware-Aware Vision Transformer Scaling",
+    "authors": "Chaojian Li, Kyungmin Kim, Bichen Wu, Peizhao Zhang, Hang Zhang, Xiaoliang Dai, Peter Vajda, Yingyan (Celine) Lin",
+    "venue": "ACM Transactions on Embedded Computing Systems (TECS 2024)",
+    "link": "https://dl.acm.org/doi/10.1145/3611387"
+  },
+  {
+    "year": "2024",
+    "title": "Towards Efficient Neuro-Symbolic AI: From Workload Characterization to Hardware Architecture",
+    "authors": "Zishen Wan, Che-Kai Liu, Hanchen Yang, Ritik Raj, Chaojian Li, Haoran You, Yonggan Fu, Cheng Wan, Sixu Li, Youbin Kim, Ananda Samajdar, Yingyan (Celine) Lin, Mohamed Ibrahim, Jan M Rabaey, Tushar Krishna, Arijit Raychowdhury",
+    "venue": "IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI 2024)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10682967"
+  },
+  {
+    "year": "2024",
+    "title": "Towards Cognitive AI Systems: a Survey and Prospective on Neuro-Symbolic AI",
+    "authors": "Zishen Wan, Che-Kai Liu, Hanchen Yang, Chaojian Li, Haoran You, Yonggan Fu, Cheng Wan, Tushar Krishna, Yingyan (Celine) Lin, Arijit Raychowdhury",
+    "venue": "IEEE Transactions on Circuits and Systems for Artificial Intelligence (ISPASS 2024)",
+    "link": "https://arxiv.org/pdf/2401.01040"
+  },
+  {
+    "year": "2024",
+    "title": "ICCAD Contest on LLM-Assisted Hardware Code Generation",
+    "authors": "Zhongzhi Yu, Chaojian Li, Yongan Zhang, Mingjie Liu, Nathaniel Pinckney, Wenfei Zhou, Haoyu Yang, Rongjian Liang, Mark Ren, Yingyan (Celine) Lin",
+    "venue": "2024 IEEE/ACM International Conference on Computer Aided Design (ICCAD 2024)",
+    "link": "https://nvlabs.github.io/LLM4HWDesign/"
+  },
+  {
     "year": "2023",
     "title": "Instant-3D: Instant Neural Radiance Field Training Towards On-Device AR/VR 3D Reconstruction",
     "authors": "Sixu Li*, Chaojian Li*, Wenbo Zhu, Boyang (Tony) Yu, Yang (Katie) Zhao, Cheng Wan, Haoran You, Yingyan (Celine) Lin",
     "venue": "Proceedings of the 50th Annual International Symposium on Computer Architecture (ISCA 2023)",
-    "link": "https://dl.acm.org/doi/abs/10.1145/3579371.3589115"
+    "link": "https://dl.acm.org/doi/abs/10.1145/3579371.3589115",
+    "note": "Top-5 Most Cited Paper at ISCA 2023"
   },
   {
     "year": "2023",
-    "title": "An Investigation on Hardware-Aware Vision Transformer Scaling",
-    "authors": "Chaojian Li, Kyungmin Kim, Bichen Wu, Peizhao Zhang, Hang Zhang, Xiaoliang Dai, Peter Vajda, Yingyan (Celine) Lin",
-    "venue": "ACM Transactions on Embedded Computing Systems (TECS 2023)",
-    "link": "https://dl.acm.org/doi/10.1145/3611387"
+    "title": "ERSAM: Neural Architecture Search for Energy-Efficient and Real-Time Social Ambiance Measurement",
+    "authors": "Chaojian Li*, Wenwan Chen*, Jiayi Yuan*, Yingyan (Celine) Lin, Ashutosh Sabharwal",
+    "venue": "ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2023)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10095360"
+  },
+  {
+    "year": "2023",
+    "title": "GPT4AIGChip: Towards Next-Generation AI Accelerator Design Automation via Large Language Models",
+    "authors": "Yonggan Fu, Yongan Zhang, Zhongzhi Yu, Sixu Li, Zhifan Ye, Chaojian Li, Cheng Wan, Yingyan (Celine) Lin",
+    "venue": "2023 IEEE/ACM International Conference on Computer Aided Design (ICCAD 2023)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10323953"
+  },
+  {
+    "year": "2023",
+    "title": "Instant-NeRF: Instant On-Device Neural Radiance Field Training via Algorithm-Accelerator Co-Designed Near-Memory Processing",
+    "authors": "Yang (Katie) Zhao, Shang Wu, Jingqun Zhang, Sixu Li, Chaojian Li, Yingyan (Celine) Lin",
+    "venue": "2023 60th ACM/IEEE Design Automation Conference (DAC 2023)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10247710"
+  },
+  {
+    "year": "2023",
+    "title": "EyeCoD: Eye Tracking System Acceleration via FlatCam-Based Algorithm and Hardware Co-Design",
+    "authors": "Haoran You, Yang (Katie) Zhao, Cheng Wan, Zhongzhi Yu, Yonggan Fu, Jiayi Yuan, Shang Wu, Shunyao Zhang, Yongan Zhang, Chaojian Li, Vivek Boominathan, Ashok Veeraraghavan, Ziyun Li, Yingyan (Celine) Lin",
+    "venue": "IEEE Micro, vol. 43, no. 4, pp. 88-97 (2023)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10123119"
+  },
+  {
+    "year": "2023",
+    "title": "ViTALiTy: Unifying Low-rank and Sparse Approximation for Vision Transformer Acceleration with a Linear Taylor Attention",
+    "authors": "Jyotikrishna Dass, Shang Wu, Huihong Shi, Chaojian Li, Zhifan Ye, Zhongfeng Wang, Yingyan (Celine) Lin",
+    "venue": "2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA 2023)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10071081"
+  },
+  {
+    "year": "2023",
+    "title": "ViTCoD: Vision Transformer Acceleration via Dedicated Algorithm and Accelerator Co-Design",
+    "authors": "Haoran You, Zhanyi Sun, Huihong Shi, Zhongzhi Yu, Yang (Katie) Zhao, Yongan Zhang, Chaojian Li, Baopu Li, Yingyan (Celine) Lin",
+    "venue": "2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA 2023)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/10071027"
   },
   {
     "year": "2022",
     "title": "RT-NeRF: Real-Time On-Device Neural Radiance Fields Towards Immersive AR/VR Rendering",
     "authors": "Chaojian Li*, Sixu Li*, Yang (Katie) Zhao, Wenbo Zhu, Yingyan (Celine) Lin",
     "venue": "Proceedings of the IEEE/ACM International Conference on Computer-Aided Design (ICCAD 2022)",
-    "link": "https://dl.acm.org/doi/abs/10.1145/3508352.3549380"
+    "link": "https://licj15.github.io/rt-nerf/",
+    "note": "Most Cited Paper at ICCAD 2022"
+  },
+  {
+    "year": "2022",
+    "title": "INGeo: Accelerating Instant Neural Scene Reconstruction with Noisy Geometry Priors",
+    "authors": "Chaojian Li, Bichen Wu, Albert Pumarola, Peizhao Zhang, Yingyan (Celine) Lin, Peter Vajda",
+    "venue": "European Conference on Computer Vision Workshop (ECCV Workshop 2022)",
+    "link": "https://arxiv.org/abs/2212.01959"
   },
   {
     "year": "2022",
@@ -71,11 +150,131 @@
     "link": "https://dl.acm.org/doi/abs/10.1145/3510835"
   },
   {
+    "year": "2022",
+    "title": "MIA-Former: Efficient and Robust Vision Transformers via Multi-Grained Input-Adaptation",
+    "authors": "Zhongzhi Yu, Yonggan Fu, Sicheng Li, Chaojian Li, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2022)",
+    "link": "https://ojs.aaai.org/index.php/AAAI/article/view/20879"
+  },
+  {
+    "year": "2022",
+    "title": "EyeCoD: Eye Tracking System Acceleration via FlatCam-based Algorithm & Accelerator Co-Design",
+    "authors": "Haoran You, Cheng Wan, Yang (Katie) Zhao, Zhongzhi Yu, Yonggan Fu, Jiayi Yuan, Shang Wu, Shunyao Zhang, Yongan Zhang, Chaojian Li, Vivek Boominathan, Ashok Veeraraghavan, Ziyun Li, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 49th Annual International Symposium on Computer Architecture (ISCA 2022)",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3470496.3527443"
+  },
+  {
+    "year": "2022",
+    "title": "i-FlatCam: A 253 FPS, 91.49 µJ/Frame Ultra-Compact Intelligent Lensless Camera for Real-Time and Efficient Eye Tracking in VR/AR",
+    "authors": "Yang (Katie) Zhao, Ziyun Li, Yonggan Fu, Yongan Zhang, Chaojian Li, Cheng Wan, Haoran You, Shang Wu, Xu Ouyang, Vivek Boominathan, Ashok Veeraraghavan, Yingyan (Celine) Lin",
+    "venue": "2022 IEEE Symposium on VLSI Technology and Circuits (VLSI 2022)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9830458",
+    "note": "Best University Demo @ DAC 2022"
+  },
+  {
+    "year": "2022",
+    "title": "SmartDeal: Remodeling Deep Network Weights for Efficient Inference and Training",
+    "authors": "Xiaohan Chen, Yang (Katie) Zhao, Yue Wang, Pengfei Xu, Haoran You, Chaojian Li, Yonggan Fu, Yingyan (Celine) Lin, Zhangyang Wang",
+    "venue": "IEEE Transactions on Neural Networks and Learning Systems (TNNLS 2022)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9724645"
+  },
+  {
     "year": "2021",
     "title": "HW-NAS-Bench: Hardware-aware neural architecture search benchmark",
     "authors": "Chaojian Li, Zhongzhi Yu, Yonggan Fu, Yongan Zhang, Yang (Katie) Zhao, Haoran You, Qixuan Yu, Yue Wang, Yingyan (Celine) Lin",
     "venue": "International Conference on Learning Representations (ICLR 2021)",
     "link": "https://openreview.net/forum?id=_0kaDkv3dVf",
     "note": "Spotlight"
+  },
+  {
+    "year": "2021",
+    "title": "A3C-S: Automated Agent Accelerator Co-Search towards Efficient Deep Reinforcement Learning",
+    "authors": "Yonggan Fu, Yongan Zhang, Chaojian Li, Zhongzhi Yu, Yingyan (Celine) Lin",
+    "venue": "Design Automation Conference (DAC 2021)",
+    "link": "https://arxiv.org/abs/2106.06577"
+  },
+  {
+    "year": "2021",
+    "title": "Locality Sensitive Teaching",
+    "authors": "Zhaozhuo Xu, Beidi Chen, Chaojian Li, Weiyang Liu, Le Song, Yingyan (Celine) Lin, Anshumali Shrivastava",
+    "venue": "Advances in Neural Information Processing Systems, vol. 34, pp. 18049-18062 (NeurIPS 2021)",
+    "link": "https://proceedings.neurips.cc/paper/2021/hash/95c3f1a8b262ec7a929a8739e21142d7-Abstract.html"
+  },
+  {
+    "year": "2021",
+    "title": "InstantNet: Automated Generation and Deployment of Instantaneously Switchable-Precision Networks",
+    "authors": "Yonggan Fu, Zhongzhi Yu, Yongan Zhang, Yifan Jiang, Chaojian Li, Yongyuan Liang, Mingchao Jiang, Zhangyang Wang, Yingyan (Celine) Lin",
+    "venue": "2021 58th ACM/IEEE Design Automation Conference (DAC 2021)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9586254"
+  },
+  {
+    "year": "2021",
+    "title": "2-in-1 Accelerator: Enabling Random Precision Switch for Winning Both Adversarial Robustness and Efficiency",
+    "authors": "Yonggan Fu, Yang (Katie) Zhao, Qixuan Yu, Chaojian Li, Yingyan (Celine) Lin",
+    "venue": "MICRO-54: 54th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO 2021)",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3466752.3480082"
+  },
+  {
+    "year": "2021",
+    "title": "DIAN: Differentiable Accelerator-Network Co-Search Towards Maximal DNN Efficiency",
+    "authors": "Yongan Zhang, Yonggan Fu, Weiwen Jiang, Chaojian Li, Haoran You, Meng Li, Vikas Chandra, Yingyan (Celine) Lin",
+    "venue": "2021 IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED 2021)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9502478"
+  },
+  {
+    "year": "2020",
+    "title": "HALO: Hardware-Aware Learning to Optimize",
+    "authors": "Chaojian Li*, Tianlong Chen*, Haoran You, Zhangyang Wang, Yingyan (Celine) Lin",
+    "venue": "European Conference on Computer Vision (ECCV 2020)",
+    "link": "https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123540477.pdf"
+  },
+  {
+    "year": "2020",
+    "title": "Drawing Early-Bird Tickets: Toward More Efficient Training of Deep Networks",
+    "authors": "Haoran You, Chaojian Li, Pengfei Xu, Yonggan Fu, Yue Wang, Xiaohan Chen, Yingyan (Celine) Lin, Zhangyang Wang, Richard G. Baraniuk",
+    "venue": "International Conference on Learning Representations (ICLR 2020)",
+    "link": "https://openreview.net/forum?id=BJxsrgStvr"
+  },
+  {
+    "year": "2020",
+    "title": "DNN-Chip Predictor: An Analytical Performance Predictor for DNN Accelerators with Various Dataflows and Hardware Architectures",
+    "authors": "Yang (Katie) Zhao, Chaojian Li, Yue Wang, Pengfei Xu, Yongan Zhang, Yingyan (Celine) Lin",
+    "venue": "International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2020)",
+    "link": "https://ieeexplore.ieee.org/document/9053977"
+  },
+  {
+    "year": "2020",
+    "title": "A New MRAM-Based Process In-Memory Accelerator for Efficient Neural Network Training with Floating Point Precision",
+    "authors": "Hongjie Wang, Yang (Katie) Zhao, Chaojian Li, Yue Wang, Yingyan (Celine) Lin",
+    "venue": "2020 IEEE International Symposium on Circuits and Systems (ISCAS 2020)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9181003"
+  },
+  {
+    "year": "2020",
+    "title": "SmartExchange: Trading Higher-cost Memory Storage/Access for Lower-cost Computation",
+    "authors": "Yang (Katie) Zhao, Xiaohan Chen, Yue Wang, Chaojian Li, Haoran You, Yonggan Fu, Yuan Xie, Zhangyang Wang, Yingyan (Celine) Lin",
+    "venue": "2020 ACM/IEEE 47th Annual International Symposium on Computer Architecture (ISCA 2020)",
+    "link": "https://ieeexplore.ieee.org/abstract/document/9138981"
+  },
+  {
+    "year": "2020",
+    "title": "AutoDNNchip: An Automated DNN Chip Predictor and Builder for Both FPGAs and ASICs",
+    "authors": "Pengfei Xu, Xiaofan Zhang, Cong Hao, Yang (Katie) Zhao, Yongan Zhang, Yue Wang, Chaojian Li, Zetong Guan, Deming Chen, Yingyan (Celine) Lin",
+    "venue": "Proceedings of the 2020 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA 2020)",
+    "link": "https://dl.acm.org/doi/abs/10.1145/3373087.3375306"
+  },
+  {
+    "year": "2020",
+    "title": "ShiftAddNet: A Hardware-Inspired Deep Network",
+    "authors": "Haoran You, Xiaohan Chen, Yongan Zhang, Chaojian Li, Sicheng Li, Zihao Liu, Zhangyang Wang, Yingyan (Celine) Lin",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS 2020)",
+    "link": "https://proceedings.neurips.cc/paper_files/paper/2020/file/1cf44d7975e6c86cffa70cae95b5fbb2-Paper.pdf"
+  },
+  {
+    "year": "2020",
+    "title": "FracTrain: Fractionally Squeezing Bit Savings Both Temporally and Spatially for Efficient DNN Training",
+    "authors": "Yonggan Fu, Haoran You, Yang (Katie) Zhao, Yue Wang, Chaojian Li, Kailash Gopalakrishnan, Zhangyang Wang, Yingyan (Celine) Lin",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS 2020)",
+    "link": "https://proceedings.neurips.cc/paper/2020/hash/8dc5983b8c4ef1d8fcd5f325f9a65511-Abstract.html"
   }
 ]
