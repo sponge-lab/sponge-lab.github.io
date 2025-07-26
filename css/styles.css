@@ -26,7 +26,7 @@ header {
   left: 0;
   right: 0;
   width: 100%;
-  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  background: linear-gradient(135deg, #003366 0%, #0074bc 100%);
   box-shadow: 0 4px 20px rgba(0, 51, 102, 0.3);
   z-index: 1000;
   border-bottom: 3px solid #faa61a;
@@ -390,15 +390,16 @@ footer {
 
 /* Research Page Specific Styles */
 .sponge-analogy {
-  background: linear-gradient(135deg, #003366 0%, #004080 100%);
+  background: linear-gradient(135deg, #003366 0%, #0074bc 100%);
   color: #faa61a;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
   font-style: italic;
   text-align: center;
-  margin: 2rem 0;
+  margin: 1rem 0;
   box-shadow: 0 4px 15px rgba(250, 166, 26, 0.3);
   line-height: 1.5;
+  font-size: 1.15rem;
 }
 
 .research-areas-grid {
@@ -659,7 +660,7 @@ footer {
   nav#navbar {
     display: none;
     flex-direction: column;
-    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    background: linear-gradient(135deg, #003366 0%, #0074bc 100%);
     position: fixed; /* Change to fixed positioning */
     right: 1rem;
     top: 90px; /* Position below the fixed header */
