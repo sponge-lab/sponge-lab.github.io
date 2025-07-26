@@ -58,6 +58,13 @@
   },
   {
     "year": "2024",
+    "title": "Omni-Recon: Harnessing Image-Based Rendering for General-Purpose Neural Radiance Fields",
+    "authors": "Yonggan Fu, Huaizhi Qu, Zhifan Ye, Chaojian Li, Kevin Zhao, Yingyan (Celine) Lin",
+    "venue": "European Conference on Computer Vision (ECCV 2024)",
+    "link": "https://link.springer.com/chapter/10.1007/978-3-031-72640-8_9"
+  },
+  {
+    "year": "2024",
     "title": "Towards Efficient Neuro-Symbolic AI: From Workload Characterization to Hardware Architecture",
     "authors": "Zishen Wan, Che-Kai Liu, Hanchen Yang, Ritik Raj, Chaojian Li, Haoran You, Yonggan Fu, Cheng Wan, Sixu Li, Youbin Kim, Ananda Samajdar, Yingyan (Celine) Lin, Mohamed Ibrahim, Jan M Rabaey, Tushar Krishna, Arijit Raychowdhury",
     "venue": "IEEE Transactions on Circuits and Systems for Artificial Intelligence (TCASAI 2024)",
@@ -110,7 +117,7 @@
     "year": "2023",
     "title": "EyeCoD: Eye Tracking System Acceleration via FlatCam-Based Algorithm and Hardware Co-Design",
     "authors": "Haoran You, Yang (Katie) Zhao, Cheng Wan, Zhongzhi Yu, Yonggan Fu, Jiayi Yuan, Shang Wu, Shunyao Zhang, Yongan Zhang, Chaojian Li, Vivek Boominathan, Ashok Veeraraghavan, Ziyun Li, Yingyan (Celine) Lin",
-    "venue": "IEEE Micro, vol. 43, no. 4, pp. 88-97 (2023)",
+    "venue": "IEEE Micro 2023",
     "link": "https://ieeexplore.ieee.org/abstract/document/10123119"
   },
   {
@@ -180,7 +187,7 @@
   },
   {
     "year": "2021",
-    "title": "HW-NAS-Bench: Hardware-aware neural architecture search benchmark",
+    "title": "HW-NAS-Bench: Hardware-Aware Neural Architecture Search Benchmark",
     "authors": "Chaojian Li, Zhongzhi Yu, Yonggan Fu, Yongan Zhang, Yang (Katie) Zhao, Haoran You, Qixuan Yu, Yue Wang, Yingyan (Celine) Lin",
     "venue": "International Conference on Learning Representations (ICLR 2021)",
     "link": "https://openreview.net/forum?id=_0kaDkv3dVf",
